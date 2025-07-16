@@ -3,7 +3,8 @@ services:
     name: protonx-bot
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "python Bot.py"
-    repo: https://github.com/protonx-bot/Protonx-bot
-    branch: main
+    envVars:
+      - key: TOKEN
+        value: 8075686130:AAFiewbewwwrq4SDIXle0aUPZCGxtuA3l7s
